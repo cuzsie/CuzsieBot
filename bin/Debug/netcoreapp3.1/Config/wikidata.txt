@@ -1,0 +1,223 @@
+Dave's Story: After beating Whitty and Tricky, Boyfriend challenges Dave to a rap battle after seeing him in his backyard. Dave accepts his offer and has a rap battle. In his third song, he becomes 3D and needs help going back to reality's typical form of 2D.
+
+Bambi's Story: After the events of Dave's week, Dave invites Boyfriend and Girlfriend to bambi's corn maze as an apology for almost destroying the world/turning the world 3D. However, as Boyfriend and Girlfriend are walking through the maze, Bambi comes out of nowhere and gets the misunderstanding that Boyfriend and Girlfriend are thieves and are trying to steal his corn.
+
+End dialogue for Bambi's Story: After the end of Maze, Bambi finally realizes that Boyfriend and Girlfriend are not trying to steal at all. After Bambi settles down, Dave arrives and the week ends with the four having a picnic in Bambi's Farm.
+
+The Final Week Story: After having the picnic, Dave states that the winner of the rap battle has not been determined yet, and Dave challenges Boyfriend to one last showdown for the victory. Bambi asks to join in too, but Dave rejects his request. Bambi isn't very happy about this. 
+
+
+The mod has recieved mixed traction by many, going back and forth as to how they feel about this mod. While some say that it got its point across and was meant to be humorous by nature, others felt like it wasn't that good and it felt bombarbed with stuff that didn't seem fitting. The positivity was given to the creativity of using 3D animated sprites to coinside with the feel of the game as well as the songs fitting the setting of the very jokey and ridiculous nature of the mod. The negativity comes from how overrated some of its contents are and how much of it makes no sense whatsoever. 
+
+Not to be confused with Dave from VS Aflac Remastered. Dave is the titular antagonist of his own week. 
+
+Dave appears as a light skinned man with a blue shirt, blue pants, and short brown hair. He sits in a black wheelchair due to having no more legs, which were blown off by a rocket.
+During Polygonized and Furiosity, he becomes a 3D model and has a distressed expression on his face. 
+
+Dave has the ability to change everything 3D, but it happens accidentally/at random. This is because he comes from a 3D style game, Dave's Fun Algebra Class.
+
+Dave broke his legs because of an accident in a science place he worked at.
+
+Furiosity, Polygonized, and Glitch all have moments where the screen will start shaking and rapidly switch through the RGB color wheel, in an attempt to distract the player.
+
+While this is not much of a gameplay interference, during Cheating, Unfairness, Glitch, Supernovae, Mealie, and Vs. Dave Thanksgiving, additional text is displayed below the song title in the bottom left corner. While this is only credit to the original composer for Glitch, Supernovae, and Mealie, in the other 3 it's something completely different, specifically:
+
+    In Cheating, it says "Screw you!"
+    In Unfairness, it says "Ghost tapping is forced off! Screw you!"
+    In Vs. Dave Thanksgiving, it says "What the hell!"
+
+The way this is done is by use of a variable in the source code called "credits".
+
+Cheating and Unfairness can also shake the screen, however it's small enough to go unnoticed.
+
+Cheating has multiple different gimmicks to make it a proper punishment for, as the song's name states, Cheating, including:
+
+    The player taking damage each time Expunged hits a note (in a near identical manner to Vs. Tabi's song, Genocide).
+    Each note (except the down note) appearing in the wrong lane.
+    The Notes and the Strikelines themselves moving around, in an attempt to confuse the player.
+
+The v2.5 update introduced another song, Unfairness, which introduces some more gameplay alterations such as:
+
+    The player taking damage each time Expunged hits a note, however, in this song, the player takes less damage overall.
+    The Notes and Strikelines circling around the center of the screen.
+    Starting the song with max Health.
+    Ghost tapping being automatically turned off.
+    Each note having a different scroll speed.
+    When you're currently using Upscroll, the song automatically switches to Downscroll. Earlier, your health bar decreases every several seconds. It looks like you're missing notes even you're not pressing any.
+
+
+Bambi has the appearance of a small farmer with a green hat, red shirt, and blue overalls. During the final segment of Mealie and the now removed song Screwed, he becomes REALLY pissed and holds the now destroyed phone in his hands instead of a microphone. During any version of Splitathon, playing as him, In Supernovae and Glitch, and in the Bambi Update, he doesn't have his overalls. When you play as him in Week 5, he wears a green Christmas hat. 
+
+
+ambi goes to corn mazes and steals corn.
+Bambi is god and has a religion.
+Bambi is the height of 1-2 hotdogs.
+Bambi came into existence for no reason.
+Bambi can make friends with everyone.
+Bambi got his hat from a lost and found bin at a corn maze.
+Bambi can get so pissed he loses his head, keeps his eyes and turns red.
+
+    This is a reference to his jumpscare in Marcello's Fun House, where he does exactly that after the player collects the second notebook.
+
+
+Bambi mooches off of Dave occasionally.
+Bambi is made of H20, Helium, CS:GO microphone, and radiation.
+Bambi has a lot of hours on Counter Strike Source.
+Bambi is asexual.
+Bambi hates anime with a passion.
+Bambi's full name is Bambi Bambi Bambi.
+Bambi lives in João Pessoa, Brazil.
+
+    When he wants to visit Dave, he teleports because he lives so far away.
+
+
+
+Tristan is a child wearing a red shirt, blue pants, Has a triangular nose, yellow shoes, and his hair is just a word saying hair (the text can change if the danger icon appears, it switched from "hair" to "ouch!" or "dead!" in the betas). 
+
+
+    Tristan was adopted by Dave.
+    Tristan is also on good terms with Bambi.
+    Tristan's favorite game is baldi dies.
+    Tristan bares a resembelance to Playtime from Baldi's Basics
+    Tristan was originally an oc by Stats45 (aka Baldiisagoodperson).
+    Tristan is 9.
+
+
+
+Expunged appears to be wearing a green hat. It has a red torso and blue legs, though it is unknown whether this is clothes or skin. Its[14] head is a light brown, with black eyes. Its smile is purely black.
+
+In its Unfairness form, they wear a red witch-like hat, as well as having a red torso and legs. Its head is still light brown, but this time, its eyes are wider and its smile is much bigger. The inside of its mouth is purely black with a white tongue. It also appears to "fall apart" occasionally in its twitchy idle. 
+
+
+    Expunged is more powerful then Dave as seen by the things they do to the notes in Cheating and Unfairness.
+    They copy Bambi's joke spritesheet because it was the first thing found in the files.
+        They also appear to talk like Bambi, but this is possibly due to them not having their own voice.
+    The character select menu mistakingly refers to Expunged as "3D Bambi"
+        However, Expunged's locked silhouette is correctly identified as "[DATA EXPUNGED]"
+
+
+    Splitathon 2 will contain the following (as of now)
+        Dave
+        Bambi (for two sections)
+        Tristan
+        Staten Tower (for two sections)
+        Bob (for two sections)
+        Ron (for two, short sections)
+    Bambi's other two songs in freeplay are from another rhythm game, Clone Hero.
+        The section of Supernovae used in the mod is actually only the final solo. The full song, produced by ArchWK, is 15 minutes long, and features solos from 12 other artists in the Clone Hero community.
+        Glitch is a song that was produced by The Boneyard, a group consisting of top Clone Hero player Frif as well as several other artists in the Clone Hero community.
+        As of Beta 2, Supernovae and Glitch are now no longer apart of the Bambi's week. They can however be accessed through the joke section in freeplay.
+    Polygonized and Furiosity have the ability to shake the screen, similarly to Ruv.
+        In 1.0, The screen now cycles through the RGB color wheel, also accompanied with the screen shaking.
+    The song Insanity shares a name with another song by Corrupt.
+    Vs Dave/Bambi is the first mod to add a secret joke song.
+        There has been many more joke songs added overtime.
+    Dave's first song House is the only song that doesn't use external plugins in FL Studio.
+    Splitathon is the only song to have both Bambi and Dave sing in one song.
+    Many of the mod’s songs have leitmotifs to each other.
+        The Menu Music, House, and Blocked have a leitmotif to Glitch.
+        Furiosity, Maze and Splitathon have a leitmotif to House.
+        Blocked and Corn Theft have a leitmotif to Insanity.
+        The beginning and ending instumental for Insanity has a leitmotif to Splitathon's Bambi section.
+    Splitathon, Glitch, Bonus Song and Mealie are the only songs that use a night-time alternate background.
+        Maze and Vs Dave Thanksgiving are the only songs to use a Dusk/Midday alternate background.
+    3D Dave originally stood up in Alpha 6-9, until this was changed in Beta 1.
+        A further look at those sprites, however, reveals that he's most likely hovering in place instead of standing up.
+    in Furiosity, BF still had his robotic voice, that's because Moldy lost the file of Furiosity with the new BF voice.
+    Originally Cleary on Twitter and Discord were to make the Dave sprites before being replaced with Rapparep lol.
+        However, Tristan's sprite sheet was made by TheBuilderXD.
+    Bambi's original sprite sheet was taken from Rapparep's mod with permission.
+        Rapparep has since then made multiple versions of Bambi, A farmer version, a pixel version, and a remastered version showcased in Vs Kapi.
+    In Vs. Dave's Pre-Alpha Build, Insanity was completely different, but was later remade because of the constant usage of jacks.
+        The same is true for the first Versions of Corn Theft and Maze, with Corn Theft's old Version being rejected simply because Moldy didn't like it, and Old Maze because of it being quite repetitive.
+    It is confirmed that Splitathon 2 will be 1 hour long (confirmed in this post by Moldy,) but so far we only have a 21-minute Teaser.
+    Vs Dave is the first mod to have a song go over 10 minutes, making it the 6th longest song in the game.
+    Dave and Bambi's 3D models were made in Paint 3D.
+        The grass in alpha versions 1-9 however was made in Blender.
+    House, Insanity, Polygonized, Bonus Song, Furiosity and Blocked have an extra difficulty called Legacy which uses their original charts.
+        Before v2.5, the Legacy difficulty was instead called "Unnerfed".
+        This difficulty was removed in v2.5c.
+    The secret song added in v1.0 is based off a meme of VS Matt.
+    The v1.0 icon for Splitathon used for the OST and Freeplay menu uses Bambi's Alpha 9 icon. That's because the icon for Splitathon was made before Bambi's Icon was updated.
+    Going into the debug menu during Glitch or Supernovae will send you to Cheating. Trying to access Glitch, Cheating, or Supernovae's chart editor through any other means (EX: Typing the song name in the debug menu of another song) will send you to a video of Kanye East rapping and crash the game on purpose.
+        In v2.0, Pressing 7 in Cheating will make you instantly die.
+            Now in v2.5, it will instead take you to Unfairness.
+            In the leaked v2.5 beta build, Pressing 7 in Unfairness would restart your entire computer (Only on Windows).
+                Now in v2.5, it gives you the secret Bambi and Exorcist Girl jumpscare.
+    The bridge in the old background of Bambi's week is a reference to the Garry's Mod map, gm_flatgrass.
+    In some parts of Insanity, Dave will become 3D and the background will turn into the one from Furiosity.
+    In the game files are unused Phone Arrows that damage the player when hit.
+    Mealie, a song accesible through the Freeplay Menu in v2.5, was added as a replacement for Screwed, a song in v2.0 made by ThatPizzaTowerFan, due to the previously mentioned creator making a Transphobic joke that was taken seriously.
+        Due to this exact reason, Screwed will not be listed on this page.
+    The quote "there was doodoo feces" heard in Bambi Speak is taken from an interview with late singer Michael Jackson about his time in prison, as he was talking about how horrible the bathrooms there were, quote: "there was doodoo feces all over the walls, the ceiling..."
+    The Cutscene before House uses Pre-Alpha Insanity's Instrumental as Background Music.
+        Both the v1.0 and v2.0 Cutscenes for Maze use the Bad-Ending Music as Background Music as well.
+    Although not normally playable, Cheating was actually added in v1.0, not v2.0.
+        This older version was quite different however, as it lacked a sprite for Expunged, an unique background (simply reusing the one from Furiosity) and the strikelines moving around during the song.
+        Cheating was also originally supposed to use 26 keys, but that was scrapped because the Developers never got to adding it (see pinned comment for source).
+            Cheating at the time was also instead called Bambi-Finale.
+    Worst Ending before 1.0 was called the "Vomit Ending", having Dave vomiting on the ground due to how bad the player was.
+    In the Icon grid for Playtester Build 1 and 1.0.2 are unused "HD" Icons for Bambi, it is currently unknown where they would have been used.
+    In the side update for v2.5 (v2.5b), Cheating was fixed so Expunged, Girlfriend and Boyfriend don’t get darkened. A new song was added called “Vs Dave Thanksgiving”. The free play songs now move in a disk-like matter. Every piece of text (except freeplay) is now horizontally centered. Pressing 7 on Unfairness will try to show a picture of an image with Bambi in a room, looking sad with a red tint and a caption, although for an unknown reason, it doesn't work. A few seconds later, it gives you the Bambi and Exorcist Girl jump scare. Bambi now switches to using his sprites from Screwed near the end of Mealie aswell.
+    The Dave and Bambi soundtrack is now on Spotify.
+        Supernovae, Glitch, Dave Thanksgiving, Screwed, Mealie, and Secret are not included.
+    In Splitathon, Dave and Bambi never use a duet icon, their icons simply appear in place of each other, forcibly throwing the other's icon off of the health bar in the process.
+
+    Bambi was voiced by a Brazilian guy on Discord, YouTube, Twitter, etc. called MarcelloBasics03 or Marcello's for short.
+    Dave's origin was from a mod of Baldi's Basics in Education and Learning called Dave's Fun Algebra Class.
+    In Polygonized and Furiosity Dave speaks in bar codes. (u cant scan the barcodes lol)
+    In Polygonized and Furiosity Dave is not actually angry but instead needs help turning back to 2D.
+    Tristan, his golden variant and Bambi (Playable) are the only characters intended for being playable.
+    Bambi's origin is from a joke game called Marcello's Fun House.
+    Expunged and Beta 1 - 1.0.2 3D Dave use the same spritesheet.
+    There is a censored version of break_phone.ogg (The origin of most of Bambi's vocals) in the game files.
+    Dave, Bambi and Tristan are NOT related to Baldi, even though Dave is based off of a Baldi's Basics mod called Dave's Fun Algebra Class, which was also made by MoldyGH on itch.io .
+
+    Jumpscare: When you start up the game, there is about a 1/10000 chance of a picture of Bambi popping up on your screen, after 10 seconds, there is a jumpscare and the game crashes.
+        This also happens if you press 7 in Unfairness.
+    Secret Dialogue Music: This only happens in Bambi's Week and Glitch. When playing any of Bambi's Songs in Story Mode, there is a 1/1000 that the dialogue music will change, the secret dialogue music is filled with memes.
+    Secret Bambi Video: This easter egg has been scrapped. In the source code, you can find a line of code that quits the game and opens a video if you fail a song in the Bambi week, The video is called "GET TROLLED!" and it consists of 17 minutes of Marcello's (the guy Mr. Bambi parodies) doing random shit, this is also where the phone cutscene audio originates from as well as Bambi's samples in his week.
+    If you press 7 in either Supernovae or Glitch you will have to play Cheating, which is one of the hardest songs in the entire mod.
+        Pressing 7 in version 1.0 gives you Kanye East rapping.
+            Pressing 7 in version 2.5 will allow you to play Unfairness, which is the hardest song ever made for the mod.
+                Pressing 7 in Unfairness In the leaked 2.5 beta build, it would restart your computer. This was removed due to Gamebanana thinking it was a virus.
+                    Pressing 7 in Unfairness in the latest version gives you the jumpscare easter egg instead.
+
+Bambi's favorite Wii Game is Wii Sports.
+
+    Bambi's favorite Wii Sports game is Bowling.
+
+Bambi goes to corn mazes and steals corn.
+Bambi is god and has a religion.
+Bambi is the height of 1-2 hotdogs.
+Bambi came into existence for no reason.
+Bambi can make friends with everyone.
+Bambi got his hat from a lost and found bin at a corn maze.
+Bambi can get so pissed he loses his head, keeps his eyes and turns red.
+
+    This is a reference to his jumpscare in Marcello's Fun House, where he does exactly that after the player collects the second notebook.
+
+Bambi mooches off of Dave occasionally.
+Bambi is made of H20, Helium, CS:GO microphone, and radiation.
+Bambi has a lot of hours on Counter Strike Source.
+Bambi is asexual.
+Bambi hates anime with a passion.
+Bambi's full name is Bambi Bambi Bambi.
+Bambi lives in João Pessoa, Brazil.
+
+    When he wants to visit Dave, he teleports because he lives so far away.
+
+The Bambis in Cheating and Unfairness are not actually Bambi, and rather an entity known as Expunged, the reason why it looks like Bambi is because Bambi's sprite sheet is the first one they saw
+
+
+Dave's favorite Wii game is Wii Party.
+Dave and Bambi are friends.
+Dave broke his legs because of an accident in a science place he worked at.
+Dave has went to a tournament with other mod characters.
+Boyfriend and Girlfriend got sucked into Dave's House while they were playing it.
+Dave and Bambi do not live with each other.
+Dave is straight.
+Dave has a robot suit but is still a human that wears a suit.
+
+
+Deez nuts
