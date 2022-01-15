@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lHzbUpbZU7pUtrUYXkCnNtvj7Zl6Gky7V2jyeH/otaNkQ78Wo4hqqJcUJcCtn/SEKKOTWC4ydIULMKV+z0bbNQ==",
+  "dgSpecHash": "FT1dJ3xo9jTdYi3DPBuQesQHE5MsUQ6ukDMlwsU4bHiprA05yfeLFlGui/d7kx8hbc5rNX7GcQkwnZuPAxPsLg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mario\\Favorites\\Downloads\\BambiBotNET-main\\BambiBotNET\\CuzsieBot.csproj",
+  "projectFilePath": "C:\\Users\\mario\\OneDrive\\Documents\\GitHub\\CuzsieBot\\CuzsieBot\\CuzsieBot.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mario\\.nuget\\packages\\discord.net\\2.4.0\\discord.net.2.4.0.nupkg.sha512",
     "C:\\Users\\mario\\.nuget\\packages\\discord.net.commands\\2.4.0\\discord.net.commands.2.4.0.nupkg.sha512",

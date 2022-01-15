@@ -83,6 +83,9 @@ namespace CuzsieBot
 
 		public async Task MainAsync()
 		{
+			Console.WriteLine("---CuzsieBot Launcher Version 1---");
+			Console.WriteLine("---by cuzsie#3829---");
+
 			_client = new DiscordSocketClient();
 			_client.Log += Log;
 			_client.MessageReceived += MessageSent;
@@ -128,7 +131,10 @@ namespace CuzsieBot
 			Commands.Add("slur", new GenerateSlur());
 			Commands.Add("vineboom", new VineBoom());
 			Commands.Add("server", new Server());
+			Commands.Add("roles", new Roles());
+			Commands.Add("emotes", new Emotes());
 			Commands.Add("amongus", new AmongUs());
+			Commands.Add("bigify", new ToBigLetters());
 
 			// Moderation
 			Commands.Add("ban", new Ban());
