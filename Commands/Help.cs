@@ -12,21 +12,20 @@ namespace CuzsieBot
 {
 	public class Help: Command
 	{
-		public string helpCommands =
-		"\n**Commands**\n" +
-		"\n!cuzsiequote - Generate a Cuzsie Quote using an AI Algorithim. Use !cuzsiequote smart or !cuzsiequote dumb to make it produce different outcomes with risk of copying cuzsie quotes directly." +
-		"\n!generateinsult - Generate an insult to screw someone over." + 
-		"\n!coulsoncharacter - Generate your own coulson character using an AI Algorithim.";
-
-		public string helpModeration =
-		"\n**Commands**\n" +
-		"\n!ban - (DISABLED)" +
-		"\n!kick - (DISABLED)";
-
+		public string helpCommands = "";
+		public string helpModeration = "";
 
 		public override async Task<Task> Run(List<Parameter> Params, SocketUserMessage userMessage)
 		{
-			await userMessage.Channel.SendMessageAsync("```\nCommands\n!cuzsiequote - Generate a Cuzsie Quote using an AI Algorithim. Use !cuzsiequote smart or !cuzsiequote dumb to make it produce different outcomes with risk of copying cuzsie quotes directly.\n!generateinsult - Generate an insult to screw someone over.\n!coulsoncharacter - Generate your own coulson character using an AI Algorithim.```");
+			EmbedBuilder builder = new EmbedBuilder();
+
+			foreach (KeyValuePair<string, Command> command in Program.Commands) { helpCommands += ("\n!" + command.Key); }
+			foreach (KeyValuePair<string, Command> command in Program.ModerationCommands) { helpModeration += ("\n" + command.Key);}
+
+			builder.WithTitle("**Commands**");
+			builder.Description = helpCommands;
+
+			await userMessage.Channel.SendMessageAsync("", false, builder.Build());
 			return Task.CompletedTask;
 		}
 	}

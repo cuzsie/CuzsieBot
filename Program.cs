@@ -13,7 +13,11 @@ namespace CuzsieBot
 
 		public string botPrefix = "!";
 
-		public Program()
+
+        public static Dictionary<string, Command> Commands = new Dictionary<string, Command>();
+		public static Dictionary<string, Command> ModerationCommands = new Dictionary<string, Command>();
+
+        public Program()
 		{
 			Program.Instance = this;
 		}
@@ -28,7 +32,6 @@ namespace CuzsieBot
 		}
 
 		public static Task Main(string[] args) => new Program().MainAsync();
-		public static Dictionary<string, Command> Commands = new Dictionary<string, Command>();
 		public static DiscordSocketClient _client;
 
 		private Task Log(LogMessage msg)
@@ -76,6 +79,11 @@ namespace CuzsieBot
 				if (Commands.TryGetValue(command[0],out Command cmd))
 				{
 					return cmd.Run(Params,userMessage);
+				}
+
+				if (ModerationCommands.TryGetValue(command[0], out Command cmdMod))
+				{
+					return cmdMod.Run(Params, userMessage);
 				}
 			}
 			return Task.CompletedTask;
@@ -137,8 +145,8 @@ namespace CuzsieBot
 			Commands.Add("bigify", new ToBigLetters());
 
 			// Moderation
-			Commands.Add("ban", new Ban());
-			Commands.Add("kick", new Kick());
+			ModerationCommands.Add("ban", new Ban());
+			ModerationCommands.Add("kick", new Kick());
 		}
 	}
 }
