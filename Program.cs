@@ -132,16 +132,12 @@ namespace CuzsieBot
 			Commands.Add("coulsoncharacter", new CoulsonCharacter());
 			Commands.Add("8ball", new EightBall());
 			Commands.Add("igotyoip", new Ip());
-			Commands.Add("jordans", new Jordans());
-			Commands.Add("dance", new Dance());
 			Commands.Add("avatar", new Avatar());
 			Commands.Add("hug", new Hug());
-			Commands.Add("slur", new GenerateSlur());
 			Commands.Add("vineboom", new VineBoom());
 			Commands.Add("server", new Server());
 			Commands.Add("roles", new Roles());
 			Commands.Add("emotes", new Emotes());
-			Commands.Add("amongus", new AmongUs());
 			Commands.Add("bigify", new ToBigLetters());
 
 			// Moderation

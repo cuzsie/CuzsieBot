@@ -69,6 +69,7 @@ namespace CuzsieBot
 			else if (character.ToString() == "▓") { converted += ":chains:"; }
 			else if (character.ToString() == "↓" || character.ToString() == "▼") { converted += ":arrow_down_small:"; }
 			else if (character.ToString() == "@" || character.ToString() == "▼") { converted += ":arrow_right_hook::regional_indicator_a:::leftwards_arrow_with_hook:"; }
+			else if (character.ToString() == ":" || character.ToString() == ";") { converted += ":eight:"; }
 			else { converted += $":regional_indicator_{character.ToString().ToLower()}:"; }
 
 			return converted;
