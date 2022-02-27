@@ -10,37 +10,34 @@ using MarkovSharp.TokenisationStrategies;
 
 namespace CuzsieBot
 {
+	// A command to ban people from a guild (work in progress)
 	public class Ban : Command
 	{
 		public override async Task<Task> Run(List<Parameter> Params, SocketUserMessage userMessage)
 		{
+			// Get all the varriables the api needs to ban the user
 			SocketGuildChannel chnl = userMessage.Channel as SocketGuildChannel;
 			SocketGuild Guild = chnl.Guild;
 			SocketUser user = null;
 
-			bool passedChecks = false;
-			string type = "Type";
+			bool passedChecks = false; // If the checks making sure a user was mentioned was passed
 
 			if (!userMessage.Author.IsBot)
             {
+				// Check to see if a user was mentioned
 				if (Params[0].Type == ParamaterType.User && Params[0].User != null)
 				{
 					user = Params[0].User;
 					passedChecks = true;
-					type = "User";
-				}
-				else if (Params.Count! < 0 && Params[0].Type == ParamaterType.String)
-				{
-					// user = Params[0].String;
-					passedChecks = true;
-					type = "String";
 				}
 			}		
+
 
 			if (passedChecks)
 			{
 				SocketGuildUser fartUser = userMessage.Author as SocketGuildUser;
 
+				// Check if the user can be banned, if so, ban the user
 				if (CanBan(fartUser))
 				{
 					string reason = "";
@@ -61,15 +58,15 @@ namespace CuzsieBot
 				return Task.CompletedTask;
 		}
 
-
+		// Check to see if a user can be banned (aka: has the correct perms)
 		public bool CanBan(SocketUser user)
 		{
 			SocketGuildUser uFix = user as SocketGuildUser;
 			return uFix.GuildPermissions.BanMembers;
 		}
 	}
-	
-	
+
+	// A command to kick people from a guild (work in progress)
 	public class Kick : Command
 	{
 		public override async Task<Task> Run(List<Parameter> Params, SocketUserMessage userMessage)

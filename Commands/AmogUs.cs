@@ -8,10 +8,12 @@ using System.Linq;
 using MarkovSharp;
 using MarkovSharp.TokenisationStrategies;
 
+// A command to generate a new term for "Among Us"
 namespace CuzsieBot
 {
 	public class AmogUs : Command
 	{
+		// Replacements for "Among"
 		public string[] among =
 		{
 			"Amid",
@@ -22,6 +24,7 @@ namespace CuzsieBot
 			"Among"
 		};
 
+		// Replacements for "Us"
 		public string[] us =
 		{
 			"Them",
@@ -30,13 +33,14 @@ namespace CuzsieBot
 			"The Group"
 		};
 
-		public string helpModeration = "";
 
 		public override async Task<Task> Run(List<Parameter> Params, SocketUserMessage userMessage)
 		{
 			Random rng = new Random();
 
+			// Send a message with a random "Among" and a random "Us"
 			await userMessage.Channel.SendMessageAsync(among[rng.Next(0, among.Length)] + " " + us[rng.Next(0, us.Length)]);
+
 			return Task.CompletedTask;
 		}
 	}

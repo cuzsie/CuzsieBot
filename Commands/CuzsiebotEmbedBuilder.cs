@@ -8,6 +8,7 @@ using System.Linq;
 using MarkovSharp;
 using MarkovSharp.TokenisationStrategies;
 
+// Easily create embeds
 namespace CuzsieBot
 {
     class CuzsiebotEmbedBuilder
