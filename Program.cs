@@ -11,7 +11,7 @@ namespace CuzsieBot
 	{
 		public static Program Instance;
 
-		public string botPrefix = "!";
+		public string botPrefix = "-";
 
 
         public static Dictionary<string, Command> Commands = new Dictionary<string, Command>();
@@ -107,7 +107,7 @@ namespace CuzsieBot
 			var token = File.ReadAllText(Path.Combine(Environment.CurrentDirectory,"Config","token.txt"));
 
 			await AddCommands();
-			await _client.SetGameAsync("!help for help | https://discord.gg/s5hdfdqBp2", null, ActivityType.Playing);
+			await _client.SetGameAsync("-help for help | https://discord.gg/s5hdfdqBp2", null, ActivityType.Playing);
 			await _client.LoginAsync(TokenType.Bot, token);
 			await _client.StartAsync();
 
@@ -116,7 +116,7 @@ namespace CuzsieBot
 
 		public async Task AddCommands()
 		{
-			Command[] Mark = {new CuzsieQuote(), new Insult(), new Motivation(), new FnfSongGenerator() };
+			Command[] Mark = {new CuzsieQuote(), new Motivation(), new FnfSongGenerator() };
 
 			foreach (Command command in Mark)
 				await command.Init();
@@ -126,9 +126,8 @@ namespace CuzsieBot
 
 			// Commands
 			Commands.Add("cuzsiequote", Mark[0]);
-			Commands.Add("generateinsult", Mark[1]);
-			Commands.Add("inspirobot", Mark[2]);
-			Commands.Add("fnfsong", Mark[3]);
+			Commands.Add("inspirobot", Mark[1]);
+			Commands.Add("fnfsong", Mark[2]);
 			Commands.Add("coulsoncharacter", new CoulsonCharacter());
 			Commands.Add("8ball", new EightBall());
 			Commands.Add("igotyoip", new Ip());
