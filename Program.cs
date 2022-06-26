@@ -4,35 +4,32 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 namespace CuzsieBot
 {
 	public class Program
 	{
 		public static Program Instance;
+		public static Task Main(string[] args) => new Program().MainAsync();
+		public static DiscordSocketClient _client;
+		[DllImport("kernel32.dll")] static extern IntPtr GetConsoleWindow();
+		[DllImport("user32.dll")] static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
+		const int SW_HIDE = 0;
+		const int SW_SHOW = 5;
 
-		public string botPrefix = "-";
 
+		///////////////
+		public string botPrefix = "-"; // The prefix of the bot
+        public static Dictionary<string, Command> Commands = new Dictionary<string, Command>(); // Commands
+		public static Dictionary<string, Command> ModerationCommands = new Dictionary<string, Command>(); // Moderation Commands
+		public static Dictionary<string, Command> FunCommands = new Dictionary<string, Command>(); // Fun Commands
 
-        public static Dictionary<string, Command> Commands = new Dictionary<string, Command>();
-		public static Dictionary<string, Command> ModerationCommands = new Dictionary<string, Command>();
-
-        public Program()
+		public Program()
 		{
 			Program.Instance = this;
 		}
-
-		public async Task<Task> SendMessageWithFilters(ISocketMessageChannel channel, string str)
-		{
-			if (str.Contains("@everyone") || str.Contains("@here"))
-			{
-				return channel.SendMessageAsync("Message contained a ping.");
-			}
-			return channel.SendMessageAsync(str);
-		}
-
-		public static Task Main(string[] args) => new Program().MainAsync();
-		public static DiscordSocketClient _client;
 
 		private Task Log(LogMessage msg)
 		{
@@ -45,7 +42,6 @@ namespace CuzsieBot
 			if (!(message is SocketUserMessage userMessage)) return Task.CompletedTask;
 			if (userMessage.Source != MessageSource.User) return Task.CompletedTask;
 		
-
 			if (userMessage.Content.StartsWith(botPrefix))
 			{
 				string[] command = userMessage.Content.Substring(1).Split(" ");
@@ -85,38 +81,64 @@ namespace CuzsieBot
 				{
 					return cmdMod.Run(Params, userMessage);
 				}
+
+				if (FunCommands.TryGetValue(command[0], out Command cmdFun))
+				{
+					return cmdFun.Run(Params, userMessage);
+				}
 			}
 			return Task.CompletedTask;
 		}
 
 		public async Task MainAsync()
 		{
+			Console.ReadLine();
 			Console.WriteLine("---CuzsieBot Launcher Version 1---");
-			Console.WriteLine("---by cuzsie#3829---");
+			Console.WriteLine("---by Cuzsie#3829---");
 
+			// Creates a notification icon on the tray
+			NotifyIcon tray = new NotifyIcon();
+			tray.Icon = System.Drawing.Icon.ExtractAssociatedIcon(System.IO.Directory.GetCurrentDirectory() + "\\CuzsieBot.exe");
+			tray.Visible = true;
+			tray.Click += OnTrayClick;
+
+			Console.WriteLine("CuzsieBot: Loading bot client...");
 			_client = new DiscordSocketClient();
 			_client.Log += Log;
 			_client.MessageReceived += MessageSent;
 
 			if (!File.Exists(Path.Combine(Environment.CurrentDirectory, "Config", "token.txt")))
 			{
-				Console.WriteLine("token.txt not found");
+				Console.WriteLine("Error: token.txt was not found. Try adding a token.txt file in your bot's path.");
 				return;
 			}
 
 			var token = File.ReadAllText(Path.Combine(Environment.CurrentDirectory,"Config","token.txt"));
 
+			Console.WriteLine("CuzsieBot: Adding commands...");
 			await AddCommands();
+
+			Console.WriteLine("CuzsieBot: Loading Status Message...");
 			await _client.SetGameAsync("-help for help | https://discord.gg/s5hdfdqBp2", null, ActivityType.Playing);
+
+			Console.WriteLine("CuzsieBot: Logging In...");
 			await _client.LoginAsync(TokenType.Bot, token);
 			await _client.StartAsync();
 
 			await Task.Delay(-1);
+
+			Console.WriteLine("CuzsieBot: Setup Success! Loading Discord service...");
+		}
+
+		public void OnTrayClick(object sender, EventArgs e)
+        {
+			var handle = GetConsoleWindow();
+			ShowWindow(handle, SW_SHOW);
 		}
 
 		public async Task AddCommands()
 		{
-			Command[] Mark = {new CuzsieQuote(), new Motivation(), new FnfSongGenerator() };
+			Command[] Mark = {new CuzsieQuote(), new Motivation()};
 
 			foreach (Command command in Mark)
 				await command.Init();
@@ -125,23 +147,23 @@ namespace CuzsieBot
 			Commands.Add("help", new Help());
 
 			// Commands
-			Commands.Add("cuzsiequote", Mark[0]);
-			Commands.Add("inspirobot", Mark[1]);
-			Commands.Add("fnfsong", Mark[2]);
-			Commands.Add("coulsoncharacter", new CoulsonCharacter());
-			Commands.Add("8ball", new EightBall());
-			Commands.Add("igotyoip", new Ip());
 			Commands.Add("avatar", new Avatar());
-			Commands.Add("hug", new Hug());
-			Commands.Add("vineboom", new VineBoom());
 			Commands.Add("server", new Server());
 			Commands.Add("roles", new Roles());
 			Commands.Add("emotes", new Emotes());
-			Commands.Add("bigify", new ToBigLetters());
 
 			// Moderation
 			ModerationCommands.Add("ban", new Ban());
 			ModerationCommands.Add("kick", new Kick());
+
+			// Fun
+			FunCommands.Add("cuzsiequote", Mark[0]);
+			FunCommands.Add("inspirobot", Mark[1]);
+			FunCommands.Add("coulsoncharacter", new CoulsonCharacter());
+			FunCommands.Add("8ball", new EightBall());
+			FunCommands.Add("hug", new Hug());
+			FunCommands.Add("vineboom", new VineBoom());
+			FunCommands.Add("bigify", new ToBigLetters());
 		}
 	}
 }

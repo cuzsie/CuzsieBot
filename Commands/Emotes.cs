@@ -37,14 +37,10 @@ namespace CuzsieBot
 				builder.Description = roles;
             }
 			
-
-			Console.WriteLine("Fields Made");
-
 			builder.WithThumbnailUrl(Guild.IconUrl);
 
-			Console.WriteLine("!server has been finished");
-
 			await userMessage.Channel.SendMessageAsync("", false, builder.Build());
+
 			return Task.CompletedTask;
 		}
 	}

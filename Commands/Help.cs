@@ -12,35 +12,57 @@ namespace CuzsieBot
 	{
 		public string helpCommands = "";
 		public string helpModeration = "";
+		public string helpFun = "";
+		public string[] validPrefixes = {"commands", "moderation", "fun"};
+
+		// Messages
+		public string invalidPrefixMessage = "Please provide a valid prefix (eg: -help moderation, -help commands)";
 
 		public override async Task<Task> Run(List<Parameter> Params, SocketUserMessage userMessage)
 		{
-			EmbedBuilder builder = new EmbedBuilder();
-			EmbedBuilder buildermod = new EmbedBuilder();
-
 			// Reset values
 			helpCommands = "";
 			helpModeration = "";
+			helpFun = "";
 
 			// Get all commands and add them to the helpCommands and helpModeration string
 			foreach (KeyValuePair<string, Command> command in Program.Commands) 
-				helpCommands += ("\n-" + command.Key); 
+				helpCommands += ($"\n{Program.Instance.botPrefix}" + command.Key); 
 			
 			foreach (KeyValuePair<string, Command> command in Program.ModerationCommands) 
-				helpModeration += ("\n-" + command.Key);
-			
+				helpModeration += ($"\n{Program.Instance.botPrefix}" + command.Key);
 
-			// Create a new embed with helpCommands and helpModeration
-			builder.WithTitle("**Commands**");
-			builder.Description = helpCommands;
+			foreach (KeyValuePair<string, Command> command in Program.FunCommands)
+				helpFun += ($"\n{Program.Instance.botPrefix}" + command.Key);
 
-			buildermod.WithTitle("**Moderation**");
-			buildermod.Description = helpModeration;
+			foreach (string item in validPrefixes)
+			{
+				EmbedBuilder builder = new EmbedBuilder();
 
-			// Send the final built message(s)
-			await userMessage.Channel.SendMessageAsync("", false, builder.Build());
+				builder.WithTitle($"**{item}**");
 
-			await userMessage.Channel.SendMessageAsync("", false, buildermod.Build());
+				string targetDesc = "";
+
+				switch (Params[0].String.ToLower())
+				{
+					case "commands":
+						targetDesc = helpCommands;
+						break;
+					case "moderation":
+						targetDesc = helpModeration;
+						break;
+					case "fun":
+						targetDesc = helpFun;
+						break;
+					default:
+						targetDesc = "Description1 is invalid or null.";
+						break;
+				}
+
+				builder.Description = targetDesc;
+				await userMessage.Channel.SendMessageAsync(" ", false, builder.Build());
+			}
+
 			return Task.CompletedTask;
 		}
 	}

@@ -39,7 +39,9 @@ namespace CuzsieBot
         {
             string path = System.IO.Directory.GetCurrentDirectory() + "/assets/vineboom.mp3";
             Console.WriteLine(path);
-            await userMessage.Channel.SendFileAsync(path);
+            // await userMessage.Channel.SendFileAsync(path);
+
+            await userMessage.Channel.SendMessageAsync("Penis");
             //System.IO.File.Delete(path);
 
             return Task.CompletedTask;

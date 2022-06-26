@@ -26,7 +26,6 @@ namespace CuzsieBot
 				// Make sure that it only gets 1 user.
 				if (sussyAmongUs > 0)
 					Console.WriteLine("An error occured: Users mentioned cannot be more that 1");
-				
                 else
 				{
 					// The scale of the avatar (make this bigger if you want the avatar to appear more high-quality {must be a multiple of 128, eg: 128, 256, etc})
@@ -37,8 +36,7 @@ namespace CuzsieBot
 					// Create an embed with the users avatar
 					builder.WithTitle(socketUser.Username + "'s avatar.");
 					builder.ImageUrl = socketUser.GetAvatarUrl(ImageFormat.Auto, scale);
-					
-					// Send the embed
+
 					await userMessage.Channel.SendMessageAsync("", false, builder.Build());
 				}
 

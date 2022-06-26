@@ -67,6 +67,7 @@ namespace CuzsieBot
 						break;
 					default:
 						await userMessage.Channel.SendMessageAsync("The character profile '" + Params[1].String + "' does not exist or has not been added to the registry yet.");
+
 						break;
 				}
 			}

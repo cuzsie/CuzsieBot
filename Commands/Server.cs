@@ -39,6 +39,7 @@ namespace CuzsieBot
 			Console.WriteLine("!server has been finished");
 
 			await userMessage.Channel.SendMessageAsync("" , false , builder.Build());
+			
 			return Task.CompletedTask;
 		}
 	}

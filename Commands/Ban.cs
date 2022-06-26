@@ -44,12 +44,16 @@ namespace CuzsieBot
 					string username = user.Username;
 
 					await Guild.AddBanAsync(user, 0, reason);
-					await userMessage.Channel.SendMessageAsync("Banned user '" + username + "'");
+					//await userMessage.Channel.SendMessageAsync("Banned user '" + username + "'");
+
+					await userMessage.Channel.SendMessageAsync("Penis");
 					return Task.CompletedTask;
 				}
 				else
                 {
-					await userMessage.Channel.SendMessageAsync("You dont have the required permissions to ban that user!");
+					//await userMessage.Channel.SendMessageAsync("You dont have the required permissions to ban that user!");
+
+					await userMessage.Channel.SendMessageAsync("Penis");
 					return Task.CompletedTask;
 				}
 			}
@@ -93,7 +97,7 @@ namespace CuzsieBot
 
 				if (!author.GuildPermissions.KickMembers && passedChecks || !author.GuildPermissions.Administrator && passedChecks)
 				{
-					await userMessage.Channel.SendMessageAsync("You dont have the required permissions to ban that user!");
+					//await userMessage.Channel.SendMessageAsync("You dont have the required permissions to ban that user!");
 					return Task.CompletedTask;
 				}
 				else if (author.GuildPermissions.KickMembers && passedChecks || author.GuildPermissions.Administrator && passedChecks)

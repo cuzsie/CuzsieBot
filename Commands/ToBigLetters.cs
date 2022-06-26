@@ -32,7 +32,9 @@ namespace CuzsieBot
 
 			}
 
-			await userMessage.Channel.SendMessageAsync(converted);
+			//await userMessage.Channel.SendMessageAsync(converted);
+
+			await userMessage.Channel.SendMessageAsync("Penis");
 			return Task.CompletedTask;
 		}
 

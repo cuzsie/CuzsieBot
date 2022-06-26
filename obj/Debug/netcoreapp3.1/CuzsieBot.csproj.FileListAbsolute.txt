@@ -82,3 +82,45 @@ C:\Users\mario\OneDrive\Documents\GitHub\CuzsieBot\CuzsieBot\obj\Debug\netcoreap
 C:\Users\mario\OneDrive\Documents\GitHub\CuzsieBot\CuzsieBot\obj\Debug\netcoreapp3.1\CuzsieBot.dll
 C:\Users\mario\OneDrive\Documents\GitHub\CuzsieBot\CuzsieBot\obj\Debug\netcoreapp3.1\CuzsieBot.pdb
 C:\Users\mario\OneDrive\Documents\GitHub\CuzsieBot\CuzsieBot\obj\Debug\netcoreapp3.1\CuzsieBot.genruntimeconfig.cache
+C:\Users\cuzsie\Documents\Projects\Discord Bots\CuzsieBot\CuzsieBot\bin\Debug\netcoreapp3.1\CuzsieBot.exe
+C:\Users\cuzsie\Documents\Projects\Discord Bots\CuzsieBot\CuzsieBot\bin\Debug\netcoreapp3.1\CuzsieBot.deps.json
+C:\Users\cuzsie\Documents\Projects\Discord Bots\CuzsieBot\CuzsieBot\bin\Debug\netcoreapp3.1\CuzsieBot.runtimeconfig.json
+C:\Users\cuzsie\Documents\Projects\Discord Bots\CuzsieBot\CuzsieBot\bin\Debug\netcoreapp3.1\CuzsieBot.runtimeconfig.dev.json
+C:\Users\cuzsie\Documents\Projects\Discord Bots\CuzsieBot\CuzsieBot\bin\Debug\netcoreapp3.1\CuzsieBot.dll
+C:\Users\cuzsie\Documents\Projects\Discord Bots\CuzsieBot\CuzsieBot\bin\Debug\netcoreapp3.1\CuzsieBot.pdb
+C:\Users\cuzsie\Documents\Projects\Discord Bots\CuzsieBot\CuzsieBot\bin\Debug\netcoreapp3.1\Discord.Net.Commands.dll
+C:\Users\cuzsie\Documents\Projects\Discord Bots\CuzsieBot\CuzsieBot\bin\Debug\netcoreapp3.1\Discord.Net.Core.dll
+C:\Users\cuzsie\Documents\Projects\Discord Bots\CuzsieBot\CuzsieBot\bin\Debug\netcoreapp3.1\Discord.Net.Rest.dll
+C:\Users\cuzsie\Documents\Projects\Discord Bots\CuzsieBot\CuzsieBot\bin\Debug\netcoreapp3.1\Discord.Net.Webhook.dll
+C:\Users\cuzsie\Documents\Projects\Discord Bots\CuzsieBot\CuzsieBot\bin\Debug\netcoreapp3.1\Discord.Net.WebSocket.dll
+C:\Users\cuzsie\Documents\Projects\Discord Bots\CuzsieBot\CuzsieBot\bin\Debug\netcoreapp3.1\log4net.dll
+C:\Users\cuzsie\Documents\Projects\Discord Bots\CuzsieBot\CuzsieBot\bin\Debug\netcoreapp3.1\MarkovSharp.dll
+C:\Users\cuzsie\Documents\Projects\Discord Bots\CuzsieBot\CuzsieBot\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+C:\Users\cuzsie\Documents\Projects\Discord Bots\CuzsieBot\CuzsieBot\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\cuzsie\Documents\Projects\Discord Bots\CuzsieBot\CuzsieBot\bin\Debug\netcoreapp3.1\Sanford.Multimedia.Midi.dll
+C:\Users\cuzsie\Documents\Projects\Discord Bots\CuzsieBot\CuzsieBot\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\cuzsie\Documents\Projects\Discord Bots\CuzsieBot\CuzsieBot\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\cuzsie\Documents\Projects\Discord Bots\CuzsieBot\CuzsieBot\bin\Debug\netcoreapp3.1\System.Interactive.Async.dll
+C:\Users\cuzsie\Documents\Projects\Discord Bots\CuzsieBot\CuzsieBot\bin\Debug\netcoreapp3.1\System.Linq.Async.dll
+C:\Users\cuzsie\Documents\Projects\Discord Bots\CuzsieBot\CuzsieBot\bin\Debug\netcoreapp3.1\System.Security.AccessControl.dll
+C:\Users\cuzsie\Documents\Projects\Discord Bots\CuzsieBot\CuzsieBot\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\cuzsie\Documents\Projects\Discord Bots\CuzsieBot\CuzsieBot\bin\Debug\netcoreapp3.1\System.Security.Permissions.dll
+C:\Users\cuzsie\Documents\Projects\Discord Bots\CuzsieBot\CuzsieBot\bin\Debug\netcoreapp3.1\System.Security.Principal.Windows.dll
+C:\Users\cuzsie\Documents\Projects\Discord Bots\CuzsieBot\CuzsieBot\bin\Debug\netcoreapp3.1\System.Windows.Extensions.dll
+C:\Users\cuzsie\Documents\Projects\Discord Bots\CuzsieBot\CuzsieBot\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+C:\Users\cuzsie\Documents\Projects\Discord Bots\CuzsieBot\CuzsieBot\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\cuzsie\Documents\Projects\Discord Bots\CuzsieBot\CuzsieBot\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\cuzsie\Documents\Projects\Discord Bots\CuzsieBot\CuzsieBot\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.AccessControl.dll
+C:\Users\cuzsie\Documents\Projects\Discord Bots\CuzsieBot\CuzsieBot\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\cuzsie\Documents\Projects\Discord Bots\CuzsieBot\CuzsieBot\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+C:\Users\cuzsie\Documents\Projects\Discord Bots\CuzsieBot\CuzsieBot\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+C:\Users\cuzsie\Documents\Projects\Discord Bots\CuzsieBot\CuzsieBot\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\System.Windows.Extensions.dll
+C:\Users\cuzsie\Documents\Projects\Discord Bots\CuzsieBot\CuzsieBot\obj\Debug\netcoreapp3.1\CuzsieBot.csproj.AssemblyReference.cache
+C:\Users\cuzsie\Documents\Projects\Discord Bots\CuzsieBot\CuzsieBot\obj\Debug\netcoreapp3.1\CuzsieBot.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cuzsie\Documents\Projects\Discord Bots\CuzsieBot\CuzsieBot\obj\Debug\netcoreapp3.1\CuzsieBot.AssemblyInfoInputs.cache
+C:\Users\cuzsie\Documents\Projects\Discord Bots\CuzsieBot\CuzsieBot\obj\Debug\netcoreapp3.1\CuzsieBot.AssemblyInfo.cs
+C:\Users\cuzsie\Documents\Projects\Discord Bots\CuzsieBot\CuzsieBot\obj\Debug\netcoreapp3.1\CuzsieBot.csproj.CoreCompileInputs.cache
+C:\Users\cuzsie\Documents\Projects\Discord Bots\CuzsieBot\CuzsieBot\obj\Debug\netcoreapp3.1\CuzsieBot.csproj.CopyComplete
+C:\Users\cuzsie\Documents\Projects\Discord Bots\CuzsieBot\CuzsieBot\obj\Debug\netcoreapp3.1\CuzsieBot.dll
+C:\Users\cuzsie\Documents\Projects\Discord Bots\CuzsieBot\CuzsieBot\obj\Debug\netcoreapp3.1\CuzsieBot.pdb
+C:\Users\cuzsie\Documents\Projects\Discord Bots\CuzsieBot\CuzsieBot\obj\Debug\netcoreapp3.1\CuzsieBot.genruntimeconfig.cache
