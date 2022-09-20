@@ -113,9 +113,5 @@ namespace CuzsieBot
 				}
 			}
 		}
-
-
 	}
-
-
 }

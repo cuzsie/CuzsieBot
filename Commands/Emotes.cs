@@ -29,13 +29,9 @@ namespace CuzsieBot
 			}
 
 			if (roles.Length > 50)
-			{
 				builder.Description = "There are too many emotes to display.";
-			}
 			else
-            {
 				builder.Description = roles;
-            }
 			
 			builder.WithThumbnailUrl(Guild.IconUrl);
 

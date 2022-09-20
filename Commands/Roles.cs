@@ -16,12 +16,10 @@ namespace CuzsieBot
 		{
 			SocketGuildChannel chnl = userMessage.Channel as SocketGuildChannel;
 			SocketGuild Guild = chnl.Guild;
-
-			EmbedBuilder builder = new EmbedBuilder();		
+			EmbedBuilder builder = new EmbedBuilder();
+			string roles = "Roles: \n";
 
 			builder.WithTitle(Guild.Name + " Roles");
-
-			string roles = "Roles: \n";
 
 			foreach(SocketRole role in Guild.Roles)
             {
@@ -29,14 +27,10 @@ namespace CuzsieBot
             }
 
 			builder.Description = roles;
-
-			Console.WriteLine("Fields Made");
-
 			builder.WithThumbnailUrl(Guild.IconUrl);
 
-			Console.WriteLine("!server has been finished");
-
 			await userMessage.Channel.SendMessageAsync("", false, builder.Build());
+
 			return Task.CompletedTask;
 		}
 	}

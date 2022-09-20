@@ -8,7 +8,6 @@ using System.Linq;
 using MarkovSharp;
 using MarkovSharp.TokenisationStrategies;
 
-// A command to get a specified user's avatar
 namespace CuzsieBot
 {
 	public class Avatar : Command
@@ -17,32 +16,34 @@ namespace CuzsieBot
 		{
 			List<SocketUser> user = null;
 
-			// How many users were pinged in the message.
-			// This is to prevent multiple users avatars getting grabbed and the bot getting overloaded.
 			int sussyAmongUs = 0;
 
-			foreach(SocketUser socketUser in userMessage.MentionedUsers)
-            {
-				// Make sure that it only gets 1 user.
-				if (sussyAmongUs > 0)
-					Console.WriteLine("An error occured: Users mentioned cannot be more that 1");
-                else
+			foreach (SocketUser socketUser in userMessage.MentionedUsers)
+			{
+				if (sussyAmongUs > 0) { }
+				else
 				{
-					// The scale of the avatar (make this bigger if you want the avatar to appear more high-quality {must be a multiple of 128, eg: 128, 256, etc})
 					ushort scale = 256;
+					string hqTag = "";
+
+					if (Params[1].String == "hq")
+                    {
+						scale = 1024;
+						hqTag = "(HQ)";
+                    }
+						
 
 					EmbedBuilder builder = new EmbedBuilder();
 
-					// Create an embed with the users avatar
-					builder.WithTitle(socketUser.Username + "'s avatar.");
+					builder.WithTitle(socketUser.Username + $"'s avatar. {hqTag}");
 					builder.ImageUrl = socketUser.GetAvatarUrl(ImageFormat.Auto, scale);
 
 					await userMessage.Channel.SendMessageAsync("", false, builder.Build());
 				}
 
-				// Add to the usercount.
 				sussyAmongUs++;
 			}
+			
 
 			return Task.CompletedTask;
 		}

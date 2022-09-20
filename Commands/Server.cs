@@ -16,27 +16,39 @@ namespace CuzsieBot
 		{
 			SocketGuildChannel chnl = userMessage.Channel as SocketGuildChannel;
 			SocketGuild Guild = chnl.Guild;
+			string adminSingle = "";
+
+			foreach (SocketGuildUser user in Guild.Users)
+            {
+				if (user.GuildPermissions.Administrator)
+                {
+					string easterEgg = " (hey, its me!)";
+
+					adminSingle += "\n" + user.Username;
+
+					if (user.Id == 922665299701006356)
+						adminSingle += easterEgg;
+                }
+            }
 
 			EmbedBuilder builder = new EmbedBuilder();
 
 			builder.WithTitle(Guild.Name);
 
 			builder.Description = 
-				$"Server Name: **{Guild.Name}**\n" +
-				$"Description: **{Guild.Description}**\n" +
-				$"Owner: **{Guild.Owner}**\n" +
-				$"Members: **{Guild.MemberCount}**\n" +
-				$"Created: **{Guild.CreatedAt}**\n" +
-				
-				$"Emotes: **{Guild.Emotes.Count}** (!emotes)  " +
-				$"Roles: **{Guild.Roles.Count}** (!roles)  " +
-				$"Channels: **{Guild.Channels.Count}** (!channels)  ";
-
-			Console.WriteLine("Fields Made");
+				$"**Server Name:** {Guild.Name}\n" +
+				$"**Description:** {Guild.Description}\n" +
+				$"**Owner:** {Guild.Owner}\n" +
+				$"**Members:** {Guild.MemberCount}\n" +
+				$"**Created:** {Guild.CreatedAt}\n" +
+				"-------------------------\n" +
+				$"**Emotes:** {Guild.Emotes.Count} (!emotes)\n" +
+				$"**Roles:** {Guild.Roles.Count} (!roles)\n" +
+				$"**Channels:** {Guild.Channels.Count} (!channels)\n" +
+				"-------------------------\n" +
+				$"**Server Administrators:** {adminSingle}";
 
 			builder.WithThumbnailUrl(Guild.IconUrl);
-
-			Console.WriteLine("!server has been finished");
 
 			await userMessage.Channel.SendMessageAsync("" , false , builder.Build());
 			

@@ -30,15 +30,9 @@ namespace CuzsieBot
 				return Task.CompletedTask;
 			}
 			else if (Params[0].User != null)
-			{
-				string username = user.Username;
+				await userMessage.Channel.SendMessageAsync(userMessage.Author.Mention + " hugged " + user.Mention + "! :hugging:");
 
-				await userMessage.Channel.SendMessageAsync(userMessage.Author.Username + " hugged " + username + "! :hugging:");
-				return Task.CompletedTask;
-			}
-
-			else
-				return Task.CompletedTask;
+			return Task.CompletedTask;
 		}
 	}
 }

@@ -14,7 +14,7 @@ namespace CuzsieBot
 	{
 		public override async Task<Task> Init()
 		{
-			FileToLook = "MarcelloQuotes.txt";
+			FileToLook = "cuzsiequotes.txt";
 
 			return base.Init();
 		}

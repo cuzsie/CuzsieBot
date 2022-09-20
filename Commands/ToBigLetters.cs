@@ -32,16 +32,14 @@ namespace CuzsieBot
 
 			}
 
-			//await userMessage.Channel.SendMessageAsync(converted);
+			await userMessage.Channel.SendMessageAsync(converted);
 
-			await userMessage.Channel.SendMessageAsync("Penis");
 			return Task.CompletedTask;
 		}
 
 		string coolChecks(char character)
         {
 			string converted = "";
-			Console.WriteLine(character); // DEE bug 
 
 			character.ToString().Replace("`", "");
 
@@ -54,7 +52,7 @@ namespace CuzsieBot
 			else if (character.ToString() == ">" || character.ToString() == "→") { converted += ":arrow_backward:"; }
 			else if (character.ToString() == "<" || character.ToString() == "←") { converted += ":arrow_forward:"; }
 			else if (character.ToString() == ".") { converted += ":record_button:"; }
-			else if (character.ToString() == "\"") { converted += ":pause_button:"; } // This is actually a " if you are wondering
+			else if (character.ToString() == "\"") { converted += ":pause_button:"; }
 			else if (character.ToString() == "-") { converted += ":no_entry:"; }
 			else if (character.ToString() == "|") { converted += ":regional_indicator_i:"; }
 			else if (character.ToString() == "(" || character.ToString() == "[" || character.ToString() == "{") { converted += ":arrow_right_hook:"; }
@@ -119,7 +117,6 @@ namespace CuzsieBot
 			}
 
 			return silly;
-
 		}
 	}
 }

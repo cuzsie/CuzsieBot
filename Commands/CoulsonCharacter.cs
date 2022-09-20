@@ -8,7 +8,6 @@ namespace CuzsieBot
 {
 	public class CoulsonCharacter : Command
 	{
-		// Letters / phrases that can be put together to make a name and/or an object
 		public static char[] c_Character1 = {'B', 'C', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'P', 'R', 'S', 'T', 'Z' };
 		public static char[] c_Character2 = { 'O', 'A', 'E'};
 		public static char[] Constants = { 'B', 'C', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'X', 'Y', 'Z' };
@@ -21,12 +20,10 @@ namespace CuzsieBot
 
 		public override async Task<Task> Run(List<Parameter> Params, SocketUserMessage userMessage)
 		{
-			// If there are no paramiters (AKA: Running !coulsoncharacter with no extras added)
 			if (Params.Count == 0)
 			{
 				Random rng = new Random();
 
-				// The name of the character
 				string Name =
 					c_Character1[rng.Next(0, c_Character1.Length - 1)].ToString() +
 					c_Character2[rng.Next(0, c_Character2.Length - 1)].ToString() +
@@ -45,8 +42,6 @@ namespace CuzsieBot
 
 				await ReturnCharacter(userMessage, Name, Height, Weight, FurColor, ShirtColor, PantsColor, fToy, PolishedCatch);
 			}
-
-			// Load an existing character
 			else if (Params[0].String == "loadprofile")
 			{
 				string profile = Params[1].String;
@@ -56,7 +51,7 @@ namespace CuzsieBot
 					case "coulson":
 						string Name = "COULSON";
 						string Height = "5,1";
-						string Weight = "140 Pounds"; // he can be fucking fat
+						string Weight = "100 Pounds";
 						string FurColor = "Tan";
 						string ShirtColor = "Green";
 						string PantsColor = "Dark Green";
@@ -71,8 +66,6 @@ namespace CuzsieBot
 						break;
 				}
 			}
-
-			// Simplified version of the default !coulsoncharacter
 			else if (Params[0].String == "simple")
 			{
 				Random rng = new Random();
@@ -91,18 +84,14 @@ namespace CuzsieBot
 				string PantsColor = Colors[rng.Next(0, Colors.Length)];
 				string Catch = Constants[rng.Next(0, Constants.Length - 1)].ToString() + "oo" + Constants[rng.Next(0, Constants.Length - 1)].ToString().ToLower();
 
-				// Create the message
 				ReturnSimplifiedCharacter(userMessage, Name, FurColor, ShirtColor, PantsColor, Catch);
 			}
 			else
-            {
 				await userMessage.Channel.SendMessageAsync("The provided prefix ' " + Params[0].String + " ' was not found.Please provide a valid prefix.");
-			}
 
 			return Task.CompletedTask;
 		}
 
-		// Send a character message with all of the variables.
 		public async Task<Task> ReturnCharacter(SocketUserMessage userMessage, string Name, string Height, string Weight, string FurColor, string ShirtColor, string PantsColor, string fToy, string Catch)
         {
 			string message = "";
@@ -125,7 +114,6 @@ namespace CuzsieBot
 
 			return Task.CompletedTask;
 		}
-
 		public async Task<Task> ReturnSimplifiedCharacter(SocketUserMessage userMessage, string Name, string FurColor, string ShirtColor, string PantsColor, string Catch)
 		{
 			string message = "";
