@@ -1,0 +1,2 @@
+WONKY BUGFIX FOR OLDER PROJECTS!!!!
+dotnet add package Microsoft.Build --version 17.5.0
